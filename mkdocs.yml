@@ -1,0 +1,28 @@
+site_name: kimariyb-docs
+site_url: https://docs.ikuns.icu/
+nav:
+  - 主页: index.md
+  - 计量经济学: econometrics/1.md
+  - 物理化学:
+      - 热力学第一定律: thermodynamics/1.md
+      - 热力学第二定律: thermodynamics/2.md
+  - 关于: about.md
+theme:
+  name: material
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
